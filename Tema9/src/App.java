@@ -18,7 +18,7 @@ public class App {
         do {
             try {
 
-                System.out.println("Escriba la cantidad del pedido: ");
+                System.out.print("Escriba la cantidad del pedido: ");
                 pedido = Pedidos.lector.nextInt();
 
                 if (pedido >= 1) {
@@ -32,11 +32,11 @@ public class App {
 
             catch (Exception e) {
                 incorrecto = true;
-                Pedidos.lector.next();
 
-                System.out.println("Valor inválido.");
+                System.out.print("Valor inválido. Pulse cualquier tecla para continuar. ");
+                Pedidos.lector.next();
                 /*
-                 * Se añade el .next(), para descartar la entrada inválidad del usuario, sino,
+                 * Se añade el .next(), para descartar la entrada inválida del usuario, sino,
                  * se produce un bucle infinito ya que se estaría leyendo esa entrada todo el
                  * rato.
                  */
