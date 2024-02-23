@@ -33,7 +33,7 @@ public class App {
             catch (Exception e) {
                 incorrecto = true;
 
-                System.out.print("Valor inválido. Pulse cualquier tecla para continuar. ");
+                System.out.print("Valor inválido.");
                 Pedidos.lector.next();
                 /*
                  * Se añade el .next(), para descartar la entrada inválida del usuario, sino,
